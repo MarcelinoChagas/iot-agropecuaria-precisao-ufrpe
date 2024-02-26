@@ -5,6 +5,7 @@
 #define NUMPIXELS_PER_STRIP 8 	// quantidade de LEDs na fita
 #define NUM_STRIPS          8	// numero total de fitas
 #define DELAY				1000 // tempo de delay entre pixels
+#define SWITCH_PIN          13  // pino do switch
 
 typedef struct RGBLED_t {
 	uint8_t R;
@@ -69,7 +70,7 @@ void setup(){
     }
   	
     // Configura o pino digital 13 como saida.
-  	pinMode(13,OUTPUT);
+  	pinMode(SWITCH_PIN,OUTPUT);
   
 }
 
